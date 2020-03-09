@@ -1,10 +1,11 @@
 puts 'Hello, sonny.'
 
-ask = gets.chomp
+while ask = gets.chomp
 
-while ask != ask.upcase
-    puts 'What\'s that you say, sonny? Speak up there, sonny!'
-    ask = gets.chomp
+    if ask != ask.upcase
+        puts 'What\'s that you say, sonny? Speak up there, sonny!'
+    elsif ask == ask.upcase
+        puts 'No, not since 1963.'
+    end
+
 end
-
-puts 'Yes, I can here you just fine, sonny.'
